@@ -1,0 +1,26 @@
+{% extends "../base.html" %}
+{% load staticfiles %}
+
+{% block page_title %} Add Group {% endblock %}
+
+{% block body %}
+	<div class="content">
+
+            <form action="" method="post" role="form">
+            	{% csrf_token %}
+                <div class="form-group">
+                    <label>Group Name</label>
+                    {{ form.name }}
+                    {% if form.name.errors %}
+                      <span class="help-block">
+                        {% for error in form.name.errors %}{{ error }}{% endfor %}
+                      </span>
+                    {% endif %}
+                </div>
+
+                <button type="submit" class="btn btn-success btn-round">Add Group</button>
+
+            </form>
+        
+    </div>                
+{% endblock %}

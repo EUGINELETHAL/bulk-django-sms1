@@ -1,0 +1,28 @@
+{% extends "no_auth_base.html" %}
+{% load staticfiles %}
+
+{% block body %}
+<form class="form" method="post" action="" role="form" >
+	<div class="card" style="padding: 30px; margin-top: 50px;">
+		<div class="card-header ">
+            <h2 class="header">Login</h2>
+        </div>
+        <div class="card-body ">
+            <div class="card-body">
+			    {% csrf_token %}
+			    <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter username" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" class="form-control">
+                </div>
+			</div>
+			<div class="card-footer ml-auto mr-auto">
+                <button type="submit" class="btn btn-warning btn-wd">Login</button>
+            </div>
+		</div>
+	</div>
+</form>
+{% endblock %}

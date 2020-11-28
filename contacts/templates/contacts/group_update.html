@@ -1,0 +1,21 @@
+{% extends "../base.html" %}
+{% load staticfiles %}
+
+{% block page_title %} Update Group Details {% endblock %}
+
+{% block body %}
+	<div class="content">
+
+            <form action="" method="post" role="form">
+            	{% csrf_token %}
+                <div class="form-group">
+                    <label>Group Name</label>
+                    {{ form.name }}
+                </div>
+
+                <button type="submit" class="btn btn-success btn-round">Update Group</button>
+
+            </form>
+        
+    </div>                
+{% endblock %}

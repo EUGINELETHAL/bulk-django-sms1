@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-* The project is about sending messages to multiple recipients (bulk sms)
+* The project is about sending messages to multiple recipients (bulk sms) using Africa's talking API
 
 ### How do I get set up? ###
 
@@ -17,20 +17,5 @@
 * Run `python manage.py migrate`
 * Run `python manage.py runserver`
 
-### To Do List ###
 
-* Project documentation
-* Add email backend - Ziri
-* Add search functionality
-* Admin dashboard - for charts, graphs
-* import contacts from csv, excel
 
-### Issues ###
-
-* Caching
-* Redirect to contact group creation when nono exists
-
-### Who do I talk to? ###
-
-* Repo owner/admin @athmanziri, @bmwasaru
-* Team contacts @ckchivatsi
